@@ -35,7 +35,8 @@ pipeline {
 	         // Building Tests
 	        stage('Build Tests') {
 	            steps {
-	                echo "Building package with ${WORKSPACE}"
+UiPathInstallPlatform (cliNupkgPath: 'C:\\Users\\admin_1\\Desktop\\UiPath.CLI.23.10.8753.32995.zip', forceInstall: true, traceLevel: 'None')
+			    echo "Building package with ${WORKSPACE}"
 	                UiPathPack (
 	                      outputPath: "Output\\Tests\${env.BUILD_NUMBER}",
 						  outputType: 'Tests',
